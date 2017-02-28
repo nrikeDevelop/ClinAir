@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/free_speech_blue"
-    tools:context="project.baseproject.modules.main.MainActivity">
+    tools:context="clinair.clinair.modules.main.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         <fragment
             android:layout_width="100dp"
             android:layout_height="200dp"
-            android:name="project.baseproject.modules.FragmentBase"
+            android:name="clinair.clinair.modules.FragmentBase"
             android:id="@+id/fragment"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
