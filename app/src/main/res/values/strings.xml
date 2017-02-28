@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Clinair</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_toolbar">RecSound</string>
+
+    <string name="main_text">Pulsa 3 veces segidas el botón de apagado\n para activar
+    la gravación de sonido</string>
+    <string name="main_button_activated">Activar</string>
+    <string name="main_button_disactived">Desactivar</string>
+
+    <string name="item_title">Título</string>
+    <string name="item_date">Fecha</string>
+
+    <!--main-->
+    <string name="main_spalsh_text">Busca la calle deseada de Valencia, \nselecciona la fecha y de que forma se desea \nque se muestren los datos, el día seleccionado\no la media del mes o año</string>
+    <!--toast -->
+    <string name="toast_permision_not_permited">Debes aceptar los permisos</string>
+    <string name="toast_error_main_activity_not_cennection_api_places">Ha ocurrido un error con la detección de lugares, por favor compruebe la conexión a internet</string>
+    <string name="toast_empty_ubication">Busca primero una calle</string>
+</resources>

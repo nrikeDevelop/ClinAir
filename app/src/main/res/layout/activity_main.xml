@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/free_speech_blue"
+    tools:context="project.baseproject.modules.main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:id="@+id/relativeLayout">
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+
+    <!-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Buscar"
+        android:textColor="@color/quartz_light"
+        android:background="@drawable/ripple_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/main_search_button" />
+    <-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout">
+
+        <fragment
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:name="project.baseproject.modules.FragmentBase"
+            android:id="@+id/fragment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/main_search_button"
+            android:layout_above="@+id/linearLayout" />
+
+        <RelativeLayout
+            android:id="@+id/main_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/main_splash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_search_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/world_icon"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/quartz"
+                android:text="@string/main_spalsh_text"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/main_loading"
+            android:layout_toRightOf="@+id/main_loading"
+            android:layout_toEndOf="@+id/main_loading"
+            android:id="@+id/main_search_button"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_my_calendar"
+                android:id="@+id/imageView2"
+                android:layout_above="@+id/dd"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2016"
+                android:textColor="@color/quartz"
+                android:textSize="15sp"
+                android:id="@+id/dd"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/main_button_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dia"
+                android:textColor="@color/quartz"
+                android:background="@drawable/ripple_button"/>
+            <Button
+                android:id="@+id/main_button_month"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mes"
+                android:textColor="@color/quartz"
+                android:background="@drawable/ripple_button"/>
+            <Button
+                android:id="@+id/main_button_year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Año"
+                android:textColor="@color/quartz"
+                android:background="@drawable/ripple_button"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

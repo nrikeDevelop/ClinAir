@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">@color/free_speech_blue_strong</color>
+    <color name="colorAccent">@color/chetwode_blue</color>
+
+    <!--Color components-->
+    <color name="colorToolbar">@color/colorPrimary</color>
+    <color name="buttonRipple">@color/colorPrimaryDark</color>
+    <color name="buttonRippleShadow">@color/grey</color>
+
+    <!--Colors-->
+    <color name="grey">#979797</color>
+
+    <color name="jordy_blue">#8CB8DC</color>
+    <color name="free_speech_blue">#3E4FB1</color>
+    <color name="free_speech_blue_strong">#2b398b</color>
+
+    <color name="lucky_point">#21274C</color>
+    <color name="chetwode_blue">#5666C2 </color>
+    <color name="portage">#94A0D5</color>
+    <color name="quartz">#D2D3DF</color>
+    <color name="quartz_light">#e6e7f5</color>
+
+</resources>
